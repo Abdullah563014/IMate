@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "528555642167",
+    "firebase_url": "https://vidmate-12a0c.firebaseio.com",
+    "project_id": "vidmate-12a0c",
+    "storage_bucket": "vidmate-12a0c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528555642167:android:b30f202a0916db72",
+        "android_client_info": {
+          "package_name": "md.shohel.dhaka.video.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528555642167-f8r60rutpml0n6lj2tcsmtbsc1l8jp58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "md.shohel.dhaka.video.downloader",
+            "certificate_hash": "f2ff5bb87e621d40ebc9969057e82a0a81a81aa1"
+          }
+        },
+        {
+          "client_id": "528555642167-ginkj38amb6b0fu03lts0ntfcbhmmg56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATpcOiM4Bujli159iFzFVPUVkrCH26KOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528555642167-ginkj38amb6b0fu03lts0ntfcbhmmg56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
