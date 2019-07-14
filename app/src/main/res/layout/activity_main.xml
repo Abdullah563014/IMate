@@ -21,9 +21,51 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+                android:background="#2196F3"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight="6"
+                        android:layout_width="0dp"
+                        android:background="#2196F3"
+                        android:layout_height="match_parent">
+                        <androidx.appcompat.widget.SearchView
+                            android:id="@+id/customSearchViewId"
+                            app:queryHint="Search"
+                            android:focusable="false"
+                            android:focusableInTouchMode="true"
+                            android:background="@drawable/search_menu_bg"
+                            app:iconifiedByDefault="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                        </androidx.appcompat.widget.SearchView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            app:srcCompat="@drawable/ic_voice_search"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/setting"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 

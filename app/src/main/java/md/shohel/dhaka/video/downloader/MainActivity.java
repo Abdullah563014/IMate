@@ -1,5 +1,6 @@
 package md.shohel.dhaka.video.downloader;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -10,6 +11,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.widget.SearchView;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
@@ -43,6 +45,7 @@ import md.shohel.dhaka.video.downloader.fragments.FeatureFragment;
 import md.shohel.dhaka.video.downloader.fragments.VideoFragment;
 import md.shohel.dhaka.video.downloader.model.MainModelClass;
 import md.shohel.dhaka.video.downloader.model.SubModelClass;
+import md.shohel.dhaka.video.downloader.web.WebPageActivity;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity{
     TabLayout tabLayout;
     ViewPager viewPager;
     FragmentPagerAdapter viewPagerAdapter;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,10 +66,26 @@ public class MainActivity extends AppCompatActivity{
 
         initializeAll();
 
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                Intent webIntent=new Intent(MainActivity.this, WebPageActivity.class);
+                webIntent.putExtra("myUrl",query);
+                startActivity(webIntent);
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                return false;
+            }
+        });
+
     }
 
 
     private void initializeAll(){
+        searchView=findViewById(R.id.customSearchViewId);
         tabLayout=findViewById(R.id.homeActivityTabLayoutId);
         viewPager=findViewById(R.id.mainActivityViewPagerId);
         viewPagerAdapter=new FragmentPagerAdapter(getSupportFragmentManager());
@@ -77,5 +97,6 @@ public class MainActivity extends AppCompatActivity{
         if (actionBar != null) {
             actionBar.setElevation(0);
         }
+
     }
 }

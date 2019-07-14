@@ -105,7 +105,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="10dp"
-        android:src="@drawable/about_logo"
+        android:src="@drawable/download_watermark"
         android:elevation="1dp"
         android:layout_width="70dp"
         android:layout_height="70dp" />

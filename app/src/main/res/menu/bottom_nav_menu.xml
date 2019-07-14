@@ -16,7 +16,7 @@
     <item
         android:id="@+id/bottomSettingMenuId"
         android:icon="@drawable/setting"
-        android:title="" />
+        android:title="@string/bottom_menu_setting" />
 
 
 </menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/browserBackMenuId"
+        android:icon="@drawable/ic_arrow_left"
+        android:title="" />
+
+
+    <item
+        android:id="@+id/browserForwardMenuId"
+        android:icon="@drawable/ic_right_arrow"
+        android:title="" />
+
+    <item
+        android:id="@+id/browserMenuMenuId"
+        android:icon="@drawable/ic_menu"
+        android:title="" />
+
+    <item
+        android:id="@+id/browserRefreshMenuId"
+        android:icon="@drawable/ic_refresh"
+        android:title="" />
+
+    <item
+        android:id="@+id/browserHomeMenuId"
+        android:icon="@drawable/ic_browser_home"
+        android:title="" />
+
+
+</menu>
